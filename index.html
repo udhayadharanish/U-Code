@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>U-Code</title>
+    <link rel="icon" type="image/x-icon" href="static/Images/logo.png">
     
 </head>
 <!-- <style>
@@ -163,7 +164,6 @@
         border-radius: 15px;
         margin: 0 10px;
         box-shadow: 0 0 5px rgb(72, 69, 226),0 0 20px rgb(75, 183, 245) ;
-        background-color:white;
 
     }
  
@@ -198,6 +198,15 @@
     }
     input{
         margin: 10px;
+    }
+    .btn{
+
+        padding: 12px;
+        background-color: #04528a;
+        color: white;
+        border: none;
+        border-radius: 12px;
+
     }
 
 
@@ -239,8 +248,6 @@
             margin: 10px auto;
             display: inline-block;
             text-align: center;
-            background-color:white;
-            
         }
         
         label{
@@ -259,19 +266,24 @@
         left: 10px;
         text-align: center;
     }
+        #font-family{
+            margin-top: 38px;
+        }
 
         
 
         
     }
-
+    body{
+        background-color: azure;
+    }
 </style>
 
 <body>
 
     <div class="header">
 
-        <img class="name" src="Images/logo.png" alt="" height="80px" width="80px" style="padding: 10px;">
+        <img class="name" src="static/Images/logo.png" alt="" height="80px" width="80px" style="padding: 10px;">
         <h1 class="name">
            <span style="color: rgb(26, 95, 173);"> U </span>- CODE
         </h1>
@@ -304,9 +316,9 @@
                 <option value="color">Color</option>
                 <option value="image">Image</option>
             </select>
-            
+            <br>
             <input type="color" name="background" id="background" value="#FFFFFF">
-            <br><br><br>
+            <br><br>
         </div>
         
 
@@ -324,7 +336,7 @@
             </option>
         </select>
 
-        <br><br>
+        <br>
 
         <!-- Elements -->
         <h2>Choose the Elements and Fill the content as required !</h2>
@@ -343,8 +355,8 @@
                 </div>
             </div>
         </div>
-        <button onclick="addSelect()" type="button">Add</button>
-        <input type="submit" name="" id="">
+        <button class="btn" onclick="addSelect()" type="button">Add</button>
+        <input class="btn" type="submit" name="" id="">
     </form>
 
 
